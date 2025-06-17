@@ -92,11 +92,13 @@
             <div class="card h-100 shadow-sm text-center p-3">
                 <img src="https://cdn-icons-png.flaticon.com/512/8759/8759087.png" class="mx-auto mb-3" alt="Software Dev" width="80">
                 <div class="card-body">
-                    <h5 class="card-title">Software Development</h5>
-                    <p class="card-text text-muted">Belajar membuat aplikasi dari frontend hingga backend secara profesional.</p>
+                    <h5 class="card-title">Muhammad Bintang Gunawan ST. M.KOM.</h5>
+                    <p class="card-text text-muted">Pemrograman dan pengembangan perangkat lunak</p>
+                    <span class="badge bg-primary">Software Engineering</span>
+                    <p class="card-text text-muted">Semester 3</p>
                 </div>
                 <div class="card-footer bg-white border-0">
-                    <a href="#" class="btn btn-primary w-100">Lihat Detail</a>
+                    <a href="matakuliah/software" class="btn btn-primary w-100">Lihat Detail</a>
                 </div>
             </div>
         </div>
@@ -234,7 +236,6 @@
     <p class="mb-0">© {{ date('Y') }} SISCourse — Sistem Informasi Pembelajaran STT Nurul Fikri</p>
 </footer>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

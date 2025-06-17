@@ -20,3 +20,12 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('pages.contact');
 })->middleware('auth');
+Route::get('/matakuliah', function () {
+    return view('pages.matakuliah');
+})->middleware('auth');
+Route::get('/matakuliah/software', function () {
+    return view('pages.matakuliah.software');
+})->middleware('auth');
+Route::get('/matakuliah/keamanan', function () {
+    return view('pages.matakuliah.keamanan');
+})->middleware('auth');
