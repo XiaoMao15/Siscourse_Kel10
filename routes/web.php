@@ -17,6 +17,9 @@ Route::get('/beranda', function () {
 Route::get('/about', function () {
     return view('pages.about');
 })->middleware('auth');
+Route::get('/mycourse', function () {
+    return view('pages.kelas');
+    })->middleware('auth');
 Route::get('/contact', function () {
     return view('pages.contact');
 })->middleware('auth');
