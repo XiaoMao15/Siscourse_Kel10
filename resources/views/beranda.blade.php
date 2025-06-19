@@ -82,6 +82,61 @@
         </button>
     </div>
 
+<!-- Daftar Dosen -->
+<section class="mb-5">
+    <h4 class="text-center fw-semibold mb-4">Daftar Dosen</h4>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Dosen 1 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm text-center p-3">
+                <img src="https://via.placeholder.com/100x100?text=DR" class="rounded-circle mx-auto mb-3" width="100" height="100" alt="Dosen 1">
+                <div class="card-body">
+                    <h5 class="card-title">Dr. Rahmat, S.Kom., M.T.I.</h5>
+                    <p class="card-text text-muted">Spesialis Pemrograman & Keamanan Jaringan</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dosen 2 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm text-center p-3">
+                <img src="https://via.placeholder.com/100x100?text=AN" class="rounded-circle mx-auto mb-3" width="100" height="100" alt="Dosen 2">
+                <div class="card-body">
+                    <h5 class="card-title">Andini, M.Kom</h5>
+                    <p class="card-text text-muted">Ahli UI/UX Design dan Data Science</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dosen 3 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm text-center p-3">
+                <img src="https://via.placeholder.com/100x100?text=AF" class="rounded-circle mx-auto mb-3" width="100" height="100" alt="Dosen 3">
+                <div class="card-body">
+                    <h5 class="card-title">Ahmad Fauzan, M.T</h5>
+                    <p class="card-text text-muted">Fokus pada Jaringan & Keamanan Sistem</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Informasi -->
+    <section class="text-center mb-5">
+        <h4 class="fw-semibold mb-4">Informasi Terbaru</h4>
+        <p class="text-muted">Dapatkan informasi terbaru seputar kursus, acara, dan pengumuman penting lainnya.</p>
+        <a href="/news" class="btn btn-secondary">Lihat Semua Berita</a>
+    </section>
+
+    <!-- Testimoni -->
+    <section class="text-center">
+        <h4 class="fw-semibold mb-4">Testimoni Peserta</h4>
+        <p class="text-muted">Apa kata peserta tentang pengalaman mereka di SISCourse?</p>
+        <a href="/testimonials" class="btn btn-secondary">Baca Testimoni</a>
+    </section>
+
+
+</main>
     
 
 <!-- Footer -->
