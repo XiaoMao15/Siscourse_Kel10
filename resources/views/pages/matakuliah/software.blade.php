@@ -1,46 +1,126 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Software Development</title>
+    <title>Pemrograman Web</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/path/to/favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <style>
+        .swiper-button-next, .swiper-button-prev {
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-    <h1>Software Development</h1>
-    <p>Welcome to the Software Development course page!</p>
-    <div class="container">
-        <div class="card mb-3">
-            <div class="card-body">
-                <h5 class="card-title">Course Overview</h5>
-                <p class="card-text">This course covers the fundamentals of software development, including programming languages, software design, and project management.</p>
-            </div>
-        </div>
-        <div class="card mb-3">
-           <div class="card">
-  <img src="..." class="card-img-top" alt="...">
 
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-        </div>  
-        <div class="card mb-3">
-            <div class="card-body">
-                <h5 class="card-title">Resources</h5>
-                <p class="card-text">Here are some resources to help you with the course:</p>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><a href="https://www.w3schools.com/" target="_blank">W3Schools</a> - Great for learning web development basics.</li>
-                    <li class="list-group-item"><a href="https://www.codecademy.com/" target="_blank">Codecademy</a> - Interactive coding lessons.</li>
-                    <li class="list-group-item"><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a> - Free coding bootcamp with projects.</li>
-                    <li class="list-group-item"><a href="https://www.udemy.com/" target="_blank">Udemy</a> - Online courses on various programming topics.</li>
-                    <li class="list-group-item"><a href="https://www.coursera.org/" target="_blank">Coursera</a> - University-level courses on software development.</li>
-                </ul>
+<div class="container my-5">
+    <h1>Software Development</h1>
+
+    <!-- Langkah-langkah -->
+    <h3 class="mt-4 mb-3">Langkah-langkah Pembelajaran</h3>
+    
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x180" class="card-img-top" alt="Langkah 1">
+                    <div class="card-body">
+                        <h6 class="card-title">Langkah 1</h6>
+                        <p class="card-text">Belajar HTML & CSS</p>
+                        ⭐ 4.8<br>
+                        <span class="badge bg-success">Pemula</span>
+                    </div>
+                </div>
             </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x180" class="card-img-top" alt="Langkah 2">
+                    <div class="card-body">
+                        <h6 class="card-title">Langkah 2</h6>
+                        <p class="card-text">Belajar PHP Dasar</p>
+                        ⭐ 4.7<br>
+                        <span class="badge bg-primary">Pemula</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x180" class="card-img-top" alt="Langkah 3">
+                    <div class="card-body">
+                        <h6 class="card-title">Langkah 3</h6>
+                        <p class="card-text">Laravel Framework</p>
+                        ⭐ 4.9<br>
+                        <span class="badge bg-warning text-dark">Menengah</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x180" class="card-img-top" alt="Langkah 3">
+                    <div class="card-body">
+                        <h6 class="card-title">Langkah 4</h6>
+                        <p class="card-text">Laravel Framework</p>
+                        ⭐ 4.9<br>
+                        <span class="badge bg-warning text-dark">Menengah</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x180" class="card-img-top" alt="Langkah 3">
+                    <div class="card-body">
+                        <h6 class="card-title">Langkah 5</h6>
+                        <p class="card-text">Laravel Framework</p>
+                        ⭐ 4.9<br>
+                        <span class="badge bg-warning text-dark">Menengah</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x180" class="card-img-top" alt="Langkah 3">
+                    <div class="card-body">
+                        <h6 class="card-title">Langkah 6</h6>
+                        <p class="card-text">Laravel Framework</p>
+                        ⭐ 4.9<br>
+                        <span class="badge bg-warning text-dark">Menengah</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
+        <div class="d-flex justify-content-center gap-3 mt-3">
+  <button class="btn btn-primary swiper-prev">←</button>
+  <button class="btn btn-primary swiper-next">→</button>
+</div>
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".swiper-next",
+    prevEl: ".swiper-prev",
+  },
+  breakpoints: {
+    768: { slidesPerView: 3 },
+    576: { slidesPerView: 2 },
+    0:   { slidesPerView: 1 }
+  }
+});
+
+</script>
+
 </body>
 </html>
