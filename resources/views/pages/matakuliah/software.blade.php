@@ -20,10 +20,6 @@
 
     <!-- Langkah-langkah -->
     <h3 class="mt-4 mb-3">Front End</h3>
-    <h1>Software Development</h1>
-
-    <!-- Langkah-langkah -->
-    <h3 class="mt-4 mb-3">Langkah-langkah Pembelajaran</h3>
     
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -68,77 +64,9 @@
                         <h6 class="card-title">Langkah 4</h6>
                         <p class="card-text">Belajar Framework Bootstrap</p>
                         <a href="#" class="btn btn-sm btn-primary mt-2">Pelajari</a>
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x180" class="card-img-top" alt="Langkah 1">
-                    <div class="card-body">
-                        <h6 class="card-title">Langkah 1</h6>
-                        <p class="card-text">Belajar HTML & CSS</p>
-                        ⭐ 4.8<br>
-                        <span class="badge bg-success">Pemula</span>
                     </div>
                 </div>
             </div>
-
-            <div class="swiper-slide">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x180" class="card-img-top" alt="Langkah 2">
-                    <div class="card-body">
-                        <h6 class="card-title">Langkah 2</h6>
-                        <p class="card-text">Belajar PHP Dasar</p>
-                        ⭐ 4.7<br>
-                        <span class="badge bg-primary">Pemula</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x180" class="card-img-top" alt="Langkah 3">
-                    <div class="card-body">
-                        <h6 class="card-title">Langkah 3</h6>
-                        <p class="card-text">Laravel Framework</p>
-                        ⭐ 4.9<br>
-                        <span class="badge bg-warning text-dark">Menengah</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x180" class="card-img-top" alt="Langkah 3">
-                    <div class="card-body">
-                        <h6 class="card-title">Langkah 4</h6>
-                        <p class="card-text">Laravel Framework</p>
-                        ⭐ 4.9<br>
-                        <span class="badge bg-warning text-dark">Menengah</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x180" class="card-img-top" alt="Langkah 3">
-                    <div class="card-body">
-                        <h6 class="card-title">Langkah 5</h6>
-                        <p class="card-text">Laravel Framework</p>
-                        ⭐ 4.9<br>
-                        <span class="badge bg-warning text-dark">Menengah</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x180" class="card-img-top" alt="Langkah 3">
-                    <div class="card-body">
-                        <h6 class="card-title">Langkah 6</h6>
-                        <p class="card-text">Laravel Framework</p>
-                        ⭐ 4.9<br>
-                        <span class="badge bg-warning text-dark">Menengah</span>
-                    </div>
-                </div>
-            </div>
-
         </div>
         <div class="d-flex justify-content-center gap-3 mt-3">
   <button class="btn btn-primary swiper-prev">←</button>
@@ -229,7 +157,6 @@
     0:   { slidesPerView: 1 }
   }
 });
-
 </script>
 
 </body>
