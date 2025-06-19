@@ -3,7 +3,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 
 Route::get('/', function () {
-    return redirect('/login');
+    return redirect('/beranda');
 });
 Route::get('/register', [AuthController::class, 'showRegisterForm']);
 Route::post('/register', [AuthController::class, 'register']);
@@ -12,8 +12,8 @@ Route::post('/login', [AuthController::class, 'login']);
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::get('/beranda', function () {
-    return view('pages.beranda');
-})->middleware('auth');
+    return view('beranda');
+});
 Route::get('/about', function () {
     return view('pages.about');
 })->middleware('auth');
