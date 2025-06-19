@@ -1,94 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Materi Slide Horizontal</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .materi-container {
-      display: flex;
-      overflow-x: auto;
-      gap: 1rem;
-      scroll-behavior: smooth;
-      padding: 1rem 0;
-    }
-
-    .materi-card {
-      flex: 0 0 auto;
-      width: 300px;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 1rem;
-      background-color: white;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .slider-wrapper {
-      position: relative;
-    }
-
-    .slider-button {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: #fff;
-      border: none;
-      font-size: 2rem;
-      padding: 0 10px;
-      cursor: pointer;
-      z-index: 1;
-    }
-
-    .slider-button.left {
-      left: -10px;
-    }
-
-    .slider-button.right {
-      right: -10px;
-    }
-  </style>
+    <title>Pemrograman Web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/path/to/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <style>
+        .swiper-button-next, .swiper-button-prev {
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-  <div class="container mt-5">
-    <h3>Materi Interaktif</h3>
-    <div class="slider-wrapper">
-      <button class="slider-button left" onclick="scrollLeft()">&#8592;</button>
-      <div id="materiSlider" class="materi-container">
-        <div class="materi-card">
-          <h5>Langkah 1</h5>
-          <p>Pengenalan Software Development.</p>
+
+<div class="container my-5">
+    <h1 class="text-center">Pemrograman Web</h1>
+
+    <!-- Langkah-langkah -->
+    <h3 class="mt-4 mb-3">Front End</h3>
+    
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="card" style="width: 20rem;">
+                    <img src="/images/html.jpg" class="card-img-top" alt="Langkah 1">
+                    <div class="card-body">
+                        <h6 class="card-title">Langkah 1</h6>
+                        <p class="card-text">Belajar HTML</p>
+                        <a href="#" class="btn btn-sm btn-primary mt-2">Pelajari</a>
+                    </div>
+                </div>
+            </div>
+
+             <div class="swiper-slide">
+                <div class="card" style="width: 20rem;">
+                    <img src="/images/html.jpg" class="card-img-top" alt="Langkah 2">
+                    <div class="card-body">
+                        <h6 class="card-title">Langkah 2</h6>
+                        <p class="card-text">Belajar CSS</p>
+                        <a href="#" class="btn btn-sm btn-primary mt-2">Pelajari</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card" style="width: 20rem;">
+                    <img src="/images/html.jpg" class="card-img-top" alt="Langkah 3">
+                    <div class="card-body">
+                        <h6 class="card-title">Langkah 3</h6>
+                        <p class="card-text">Belajar Java Script</p>
+                        <a href="#" class="btn btn-sm btn-primary mt-2">Pelajari</a>
+                    </div>
+                </div>
+            </div>
+
+             <div class="swiper-slide">
+                <div class="card" style="width: 20rem;">
+                    <img src="/images/html.jpg" class="card-img-top" alt="Langkah 4">
+                    <div class="card-body">
+                        <h6 class="card-title">Langkah 4</h6>
+                        <p class="card-text">Belajar Framework Bootstrap</p>
+                        <a href="#" class="btn btn-sm btn-primary mt-2">Pelajari</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="materi-card">
-          <h5>Langkah 2</h5>
-          <p>Belajar Bahasa Pemrograman Dasar.</p>
+        <div class="d-flex justify-content-center gap-3 mt-3">
+  <button class="btn btn-primary swiper-prev">←</button>
+  <button class="btn btn-primary swiper-next">→</button>
+</div>
+
+         <h3 class="mt-4 mb-3">Back End</h3>
+    
+    <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="card" style="width: 20rem;">
+                    <img src="/images/html.jpg" class="card-img-top" alt="Langkah 1">
+                    <div class="card-body">
+                        <h6 class="card-title">Langkah 1</h6>
+                        <p class="card-text">Belajar HTML</p>
+                        <a href="#" class="btn btn-sm btn-primary mt-2">Pelajari</a>
+                    </div>
+                </div>
+            </div>
+
+             <div class="swiper-slide">
+                <div class="card" style="width: 20rem;">
+                    <img src="/images/html.jpg" class="card-img-top" alt="Langkah 2">
+                    <div class="card-body">
+                        <h6 class="card-title">Langkah 2</h6>
+                        <p class="card-text">Belajar CSS</p>
+                        <a href="#" class="btn btn-sm btn-primary mt-2">Pelajari</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card" style="width: 20rem;">
+                    <img src="/images/html.jpg" class="card-img-top" alt="Langkah 3">
+                    <div class="card-body">
+                        <h6 class="card-title">Langkah 3</h6>
+                        <p class="card-text">Belajar Java Script</p>
+                        <a href="#" class="btn btn-sm btn-primary mt-2">Pelajari</a>
+                    </div>
+                </div>
+            </div>
+
+             <div class="swiper-slide">
+                <div class="card" style="width: 20rem;">
+                    <img src="/images/html.jpg" class="card-img-top" alt="Langkah 4">
+                    <div class="card-body">
+                        <h6 class="card-title">Langkah 4</h6>
+                        <p class="card-text">Belajar Framework Bootstrap</p>
+                        <a href="#" class="btn btn-sm btn-primary mt-2">Pelajari</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="materi-card">
-          <h5>Langkah 3</h5>
-          <p>Mengenal Frontend dan Backend.</p>
-        </div>
-        <div class="materi-card">
-          <h5>Langkah 4</h5>
-          <p>Manajemen Proyek Perangkat Lunak.</p>
-        </div>
-         <div class="materi-card">
-          <h5>Langkah 4</h5>
-          <p>Manajemen Proyek Perangkat Lunak.</p>
-        </div>
-      </div>
-      <button class="slider-button right" onclick="scrollRight()">&#8594;</button>
+        <div class="d-flex justify-content-center gap-3 mt-3">
+  <button class="btn btn-primary swiper-prev2">←</button>
+  <button class="btn btn-primary swiper-next1">→</button>
+</div>
     </div>
-  </div>
 
-  <script>
-    const slider = document.getElementById('materiSlider');
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".swiper-next",
+    prevEl: ".swiper-prev",
+  },
+  breakpoints: {
+    768: { slidesPerView: 3 },
+    576: { slidesPerView: 2 },
+    0:   { slidesPerView: 1 }
+  }
+});
+ var swiper1 = new Swiper(".mySwiper1", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".swiper-next1",
+    prevEl: ".swiper-prev2",
+  },
+  breakpoints: {
+    768: { slidesPerView: 3 },
+    576: { slidesPerView: 2 },
+    0:   { slidesPerView: 1 }
+  }
+});
+</script>
 
-    function scrollLeft() {
-      slider.scrollBy({ left: -300, behavior: 'smooth' });
-    }
-
-    function scrollRight() {
-      slider.scrollBy({ left: 300, behavior: 'smooth' });
-    }
-  </script>
 </body>
 </html>
