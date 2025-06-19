@@ -90,7 +90,7 @@
                     <p class="card-text text-muted">Semester 3</p>
                 </div>
                 <div class="card-footer bg-white border-0">
-                    <a href="#" class="btn btn-primary w-100">Lihat Detail</a>
+                    <a href="matakuliah/Ai" class="btn btn-primary w-100">Lihat Detail</a>
                 </div>
             </div>
         </div>
