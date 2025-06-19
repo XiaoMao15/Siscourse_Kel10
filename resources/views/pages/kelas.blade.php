@@ -86,6 +86,8 @@
                 <div class="card-body">
                     <h5 class="card-title">Artificial Intelligence</h5>
                     <p class="card-text text-muted">Belajar teknologi AI modern termasuk machine learning dan NLP.</p>
+                    <span class="badge bg-primary">Data Engineering</span>
+                    <p class="card-text text-muted">Semester 3</p>
                 </div>
                 <div class="card-footer bg-white border-0">
                     <a href="#" class="btn btn-primary w-100">Lihat Detail</a>
@@ -100,6 +102,8 @@
                 <div class="card-body">
                     <h5 class="card-title">UI/UX Design</h5>
                     <p class="card-text text-muted">Desain antarmuka pengguna yang menarik dan pengalaman pengguna optimal.</p>
+                    <span class="badge bg-primary">Software Engineering</span>
+                    <p class="card-text text-muted">Semester 3</p>
                 </div>
                 <div class="card-footer bg-white border-0">
                     <a href="#" class="btn btn-primary w-100">Lihat Detail</a>
@@ -114,6 +118,8 @@
                 <div class="card-body">
                     <h5 class="card-title">Networking</h5>
                     <p class="card-text text-muted">Pelajari dasar hingga lanjut jaringan komputer dan pengaturannya.</p>
+                    <span class="badge bg-primary">Network Engineering</span>
+                    <p class="card-text text-muted">Semester 3</p>
                 </div>
                 <div class="card-footer bg-white border-0">
                     <a href="#" class="btn btn-primary w-100">Lihat Detail</a>
@@ -128,6 +134,8 @@
                 <div class="card-body">
                     <h5 class="card-title">Data Science</h5>
                     <p class="card-text text-muted">Analisis dan visualisasi data untuk pengambilan keputusan berbasis informasi.</p>
+                    <span class="badge bg-primary">Data Engineering</span>
+                    <p class="card-text text-muted">Semester 3</p>
                 </div>
                 <div class="card-footer bg-white border-0">
                     <a href="#" class="btn btn-primary w-100">Lihat Detail</a>
@@ -142,6 +150,8 @@
                 <div class="card-body">
                     <h5 class="card-title">Cyber Security</h5>
                     <p class="card-text text-muted">Fokus pada keamanan data, sistem, dan teknik proteksi digital.</p>
+                    <span class="badge bg-primary">Cyber Security</span>
+                    <p class="card-text text-muted">Semester 3</p>
                 </div>
                 <div class="card-footer bg-white border-0">
                     <a href="#" class="btn btn-primary w-100">Lihat Detail</a>
