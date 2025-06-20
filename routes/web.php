@@ -32,6 +32,9 @@ Route::get('/matakuliah/software', function () {
 Route::get('/matakuliah/Ai', function () {
     return view('pages.matakuliah.Ai');
 })->middleware('auth');
+Route::get('/matakuliah/software-html', function () {
+    return view('pages.matakuliah.software-html');
+})->middleware('auth');
 Route::get('/matakuliah/keamanan', function () {
     return view('pages.matakuliah.keamanan');
 })->middleware('auth');

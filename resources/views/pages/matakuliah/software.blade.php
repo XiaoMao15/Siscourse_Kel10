@@ -53,7 +53,8 @@
         </div>
     </div>
 </nav>
-<br>
+<!-- Main Content -->
+<main class="container my-5">
 <div class="container my-5">
     <h1 class="text-center">Pemrograman Web</h1>
 
@@ -69,7 +70,7 @@
                     <div class="card-body">
                         <h6 class="card-title">Materi 1</h6>
                         <p class="card-text">Belajar HTML</p>
-                        <a href="#" class="btn btn-sm btn-primary mt-2">Pelajari</a>
+                        <a href="/matakuliah/software-html" class="btn btn-sm btn-primary mt-2">Pelajari</a>
                     </div>
                 </div>
             </div>
@@ -179,7 +180,7 @@
 </div>
     </div>
 </div>
-<br>
+    </main>
 <!-- Footer -->
 <footer class="text-white text-center py-4" style="background-color: #004080;">
     <p class="mb-0">© {{ date('Y') }} SISCourse — Sistem Informasi Pembelajaran STT Nurul Fikri</p>
