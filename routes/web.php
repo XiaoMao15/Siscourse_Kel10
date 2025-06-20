@@ -1,6 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\KeluhanController;
 
 Route::get('/', function () {
     return redirect('/beranda');
@@ -10,6 +11,8 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+Route::get('/keluhan', [KeluhanController::class, 'form'])->name('keluhan');
+Route::post('/keluhan', [KeluhanController::class, 'kirim'])->name('hasilkeluh.kirim');
 
 Route::get('/beranda', function () {
     return view('beranda');
@@ -28,9 +31,6 @@ Route::get('/matakuliah', function () {
 })->middleware('auth');
 Route::get('/matakuliah/software', function () {
     return view('pages.matakuliah.software');
-})->middleware('auth');
-Route::get('/matakuliah/Ai', function () {
-    return view('pages.matakuliah.Ai');
 })->middleware('auth');
 Route::get('/matakuliah/keamanan', function () {
     return view('pages.matakuliah.keamanan');
