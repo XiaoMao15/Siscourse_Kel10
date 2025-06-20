@@ -3,7 +3,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 
 Route::get('/', function () {
-    return redirect('/login');
+    return redirect('/beranda');
 });
 Route::get('/register', [AuthController::class, 'showRegisterForm']);
 Route::post('/register', [AuthController::class, 'register']);
@@ -12,11 +12,14 @@ Route::post('/login', [AuthController::class, 'login']);
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::get('/beranda', function () {
-    return view('pages.beranda');
-})->middleware('auth');
+    return view('beranda');
+});
 Route::get('/about', function () {
     return view('pages.about');
 })->middleware('auth');
+Route::get('/mycourse', function () {
+    return view('pages.kelas');
+    })->middleware('auth');
 Route::get('/contact', function () {
     return view('pages.contact');
 })->middleware('auth');
@@ -26,6 +29,12 @@ Route::get('/matakuliah', function () {
 Route::get('/matakuliah/software', function () {
     return view('pages.matakuliah.software');
 })->middleware('auth');
+<<<<<<< HEAD
+=======
+Route::get('/matakuliah/Ai', function () {
+    return view('pages.matakuliah.Ai');
+})->middleware('auth');
+>>>>>>> 9e4e159a36d66206a6e89e03cbd46623a77221ef
 Route::get('/matakuliah/keamanan', function () {
     return view('pages.matakuliah.keamanan');
 })->middleware('auth');
