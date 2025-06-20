@@ -82,97 +82,6 @@
         </button>
     </div>
 
-    <!-- Pemilihan Peminatan -->
-    <section class="mb-5">
-    <h4 class="text-center fw-semibold mb-4">Pilih Peminatan Anda</h4>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-
-        <!-- Software Development -->
-        <div class="col">
-            <div class="card h-100 shadow-sm text-center p-3">
-                <img src="https://cdn-icons-png.flaticon.com/512/8759/8759087.png" class="mx-auto mb-3" alt="Software Dev" width="80">
-                <div class="card-body">
-                    <h5 class="card-title">Software Development</h5>
-                    <p class="card-text text-muted">Belajar membuat aplikasi dari frontend hingga backend secara profesional.</p>
-                </div>
-                <div class="card-footer bg-white border-0">
-                    <a href="#" class="btn btn-primary w-100">Lihat Detail</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Artificial Intelligence -->
-        <div class="col">
-            <div class="card h-100 shadow-sm text-center p-3">
-                <img src="https://cdn-icons-png.flaticon.com/512/10644/10644640.png" class="mx-auto mb-3" alt="AI" width="80">
-                <div class="card-body">
-                    <h5 class="card-title">Artificial Intelligence</h5>
-                    <p class="card-text text-muted">Belajar teknologi AI modern termasuk machine learning dan NLP.</p>
-                </div>
-                <div class="card-footer bg-white border-0">
-                    <a href="#" class="btn btn-primary w-100">Lihat Detail</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- UI/UX Design -->
-        <div class="col">
-            <div class="card h-100 shadow-sm text-center p-3">
-                <img src="https://cdn-icons-png.freepik.com/512/8448/8448634.png" class="mx-auto mb-3" alt="UI/UX" width="80">
-                <div class="card-body">
-                    <h5 class="card-title">UI/UX Design</h5>
-                    <p class="card-text text-muted">Desain antarmuka pengguna yang menarik dan pengalaman pengguna optimal.</p>
-                </div>
-                <div class="card-footer bg-white border-0">
-                    <a href="#" class="btn btn-primary w-100">Lihat Detail</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Networking -->
-        <div class="col">
-            <div class="card h-100 shadow-sm text-center p-3">
-                <img src="https://cdn-icons-png.freepik.com/512/3470/3470508.png" class="mx-auto mb-3" alt="Networking" width="80">
-                <div class="card-body">
-                    <h5 class="card-title">Networking</h5>
-                    <p class="card-text text-muted">Pelajari dasar hingga lanjut jaringan komputer dan pengaturannya.</p>
-                </div>
-                <div class="card-footer bg-white border-0">
-                    <a href="#" class="btn btn-primary w-100">Lihat Detail</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Data Science -->
-        <div class="col">
-            <div class="card h-100 shadow-sm text-center p-3">
-                <img src="https://cdn-icons-png.flaticon.com/512/4824/4824797.png" class="mx-auto mb-3" alt="Data Science" width="80">
-                <div class="card-body">
-                    <h5 class="card-title">Data Science</h5>
-                    <p class="card-text text-muted">Analisis dan visualisasi data untuk pengambilan keputusan berbasis informasi.</p>
-                </div>
-                <div class="card-footer bg-white border-0">
-                    <a href="#" class="btn btn-primary w-100">Lihat Detail</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Cyber Security -->
-        <div class="col">
-            <div class="card h-100 shadow-sm text-center p-3">
-                <img src="https://cdn-icons-png.flaticon.com/512/2092/2092663.png" class="mx-auto mb-3" alt="Cyber Security" width="80">
-                <div class="card-body">
-                    <h5 class="card-title">Cyber Security</h5>
-                    <p class="card-text text-muted">Fokus pada keamanan data, sistem, dan teknik proteksi digital.</p>
-                </div>
-                <div class="card-footer bg-white border-0">
-                    <a href="#" class="btn btn-primary w-100">Lihat Detail</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
 <!-- Daftar Dosen -->
 <section class="mb-5">
     <h4 class="text-center fw-semibold mb-4">Daftar Dosen</h4>
@@ -228,13 +137,13 @@
 
 
 </main>
+    
 
 <!-- Footer -->
 <footer class="text-white text-center py-4" style="background-color: #004080;">
     <p class="mb-0">© {{ date('Y') }} SISCourse — Sistem Informasi Pembelajaran STT Nurul Fikri</p>
 </footer>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
