@@ -31,6 +31,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/mycourse">My Course</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/keluhan">Layanan</a>
+                </li>
             </ul>
 
             <ul class="navbar-nav">
@@ -43,9 +46,7 @@
                         <li><a class="dropdown-item" href="/settings">Setting</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li>
-                            <form action="{{ route('logout') }}" method="POST">@csrf
-                                <button class="dropdown-item text-danger" type="submit">Logout</button>
-                            </form>
+                             <a href="{{ route('logout') }}" class="text-red-600 hover:underline">Logout</a>
                         </li>
                     </ul>
                 </li>
