@@ -23,35 +23,7 @@
   </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">SISCourse</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse justify-content-between" id="navbarMain">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item"><a class="nav-link active" href="/">Beranda</a></li>
-        <li class="nav-item"><a class="nav-link" href="/mycourse">My Course</a></li>
-      </ul>
-      <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-            Akun
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item" href="/profile/reset">Edit Foto Profil</a></li>
-            <li><a class="dropdown-item" href="/settings">Setting</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li>
-              <form action="{{ route('logout') }}" method="POST">@csrf
-                <button class="dropdown-item text-danger" type="submit">Logout</button>
-              </form>
-            </li>
-          </ul>
-        </li>
-      </ul>
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #004080;">
     <div class="container">
         <a class="navbar-brand fw-bold" href="#">SISCourse</a>
@@ -175,7 +147,7 @@
           </div>
           <!-- Dosen 6 -->
           <div class="col">
-            <<div class="card h-100 text-center p-3 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalDosen6" style="cursor: pointer;">
+            <div class="card h-100 text-center p-3 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalDosen6" style="cursor: pointer;">
               <img src="https://jektvnews.disway.id/upload/5f21625613244cdf378d0e55200ddb18.jpg" class="rounded mx-auto mb-3" width="120" height="120" alt="Dosen 6">
               <h5 class="card-title">Nina Nurlela, S.T., M.T.</h5>
               <p class="text-muted">Cloud Computing</p>
@@ -242,18 +214,18 @@
         </div>
     <!-- Modal Dosen 2 -->
         <div class="modal fade" id="modalDosen2" tabindex="-1" aria-labelledby="modalDosen2Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalDosen2Label">Kelas oleh Andini</h5>
+        <div class="modal-dialog modal-dialog-centered1">
+            <div class="modal-content1">
+            <div class="modal-header1">
+                <h5 class="modal-title1" id="modalDosen2Label">Kelas oleh Andini</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body1">
                 <p><strong>Mata Kuliah:</strong> UI/UX & Data Science</p>
                 <p><strong>Waktu:</strong> Rabu, 10:00 - 11:40 WIB</p>
                 <p><strong>Ruangan:</strong> Zoom A</p>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer1">
                 <a href="/kelas/andini" class="btn btn-primary">Join Kelas</a>
             </div>
             </div>

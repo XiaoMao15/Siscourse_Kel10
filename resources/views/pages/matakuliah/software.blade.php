@@ -54,7 +54,8 @@
     </div>
 </nav>
 <br>
-<div class="container my-5">
+<main>
+    <div class="container my-5">
     <h1 class="text-center">Pemrograman Web</h1>
 
     <!-- Langkah-langkah -->
@@ -180,6 +181,7 @@
     </div>
 </div>
 <br>
+</main>
 <!-- Footer -->
 <footer class="text-white text-center py-4" style="background-color: #004080;">
     <p class="mb-0">© {{ date('Y') }} SISCourse — Sistem Informasi Pembelajaran STT Nurul Fikri</p>
