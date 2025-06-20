@@ -7,6 +7,8 @@
 
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <style>
         .object-fit-cover {
             object-fit: cover;
@@ -15,44 +17,52 @@
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #004080;">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="#">SISCourse</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #004080;">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+  <i class="fas fa-graduation-cap fa-lg"></i> SISCourse</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse justify-content-between" id="navbarMain">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="/">Beranda</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/mycourse">My Course</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/keluhan">Layanan</a>
-                </li>
-            </ul>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarMain">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link active" href="/">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="/mycourse">My Course</a></li>
+        <li class="nav-item"><a class="nav-link" href="/keluhan">Layanan</a></li>
+      </ul>
 
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="akunDropdown" role="button" data-bs-toggle="dropdown">
-                        Akun
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="/profile/reset">Edit Foto Profil</a></li>
-                        <li><a class="dropdown-item" href="/settings">Setting</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li>
-                             <p><a href="{{ route('logout') }}" class="mx-3 link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Logout</a></p>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+      <!-- Akun Dropdown -->
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="akunDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Akun
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end shadow rounded-3 animate__animated animate__fadeIn" aria-labelledby="akunDropdown">
+            <li>
+              <a class="dropdown-item" href="/profile/reset">
+                <i class="bi bi-person-circle me-2"></i>Edit Foto Profil
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/settings">
+                <i class="bi bi-gear me-2"></i>Setting
+              </a>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+            <li>
+              <form action="{{ route('logout') }}" method="POST" class="px-3">
+                @csrf
+                <button class="btn btn-outline-danger w-100" type="submit">
+                  <i class="bi bi-box-arrow-right me-1"></i> Logout
+                </button>
+              </form>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
+  </div>
 </nav>
 
 <!-- Main Content -->
