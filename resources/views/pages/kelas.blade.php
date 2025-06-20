@@ -31,6 +31,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/mycourse">My Course</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/keluhan">Layanan</a>
+                </li>
             </ul>
 
             <ul class="navbar-nav">
@@ -43,9 +46,7 @@
                         <li><a class="dropdown-item" href="/settings">Setting</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li>
-                            <form action="{{ route('logout') }}" method="POST">@csrf
-                                <button class="dropdown-item text-danger" type="submit">Logout</button>
-                            </form>
+                             <p><a href="{{ route('logout') }}" class="mx-3 link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Logout</a></p>
                         </li>
                     </ul>
                 </li>
@@ -90,7 +91,7 @@
                     <p class="card-text text-muted">Semester 3</p>
                 </div>
                 <div class="card-footer bg-white border-0">
-                    <a href="matakuliah/Ai" class="btn btn-primary w-100">Lihat Detail</a>
+                    <a href="#" class="btn btn-primary w-100">Lihat Detail</a>
                 </div>
             </div>
         </div>

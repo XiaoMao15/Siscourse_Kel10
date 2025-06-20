@@ -15,6 +15,45 @@
 </head>
 <body>
 
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #004080;">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">SISCourse</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarMain">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/mycourse">My Course</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="akunDropdown" role="button" data-bs-toggle="dropdown">
+                        Akun
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="/profile/reset">Edit Foto Profil</a></li>
+                        <li><a class="dropdown-item" href="/settings">Setting</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <form action="{{ route('logout') }}" method="POST">@csrf
+                                <button class="dropdown-item text-danger" type="submit">Logout</button>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<br>
 <div class="container my-5">
     <h1 class="text-center">Pemrograman Web</h1>
 
@@ -26,9 +65,9 @@
 
             <div class="swiper-slide">
                 <div class="card" style="width: 20rem;">
-                    <img src="/images/html.jpg" class="card-img-top" alt="Langkah 1">
+                    <img src="/images/pemweb-html.png" class="card-img-top" alt="Langkah 1">
                     <div class="card-body">
-                        <h6 class="card-title">Langkah 1</h6>
+                        <h6 class="card-title">Materi 1</h6>
                         <p class="card-text">Belajar HTML</p>
                         <a href="#" class="btn btn-sm btn-primary mt-2">Pelajari</a>
                     </div>
@@ -37,9 +76,9 @@
 
              <div class="swiper-slide">
                 <div class="card" style="width: 20rem;">
-                    <img src="/images/html.jpg" class="card-img-top" alt="Langkah 2">
+                    <img src="/images/pemweb-css.png" class="card-img-top" alt="Langkah 2">
                     <div class="card-body">
-                        <h6 class="card-title">Langkah 2</h6>
+                        <h6 class="card-title">Materi 2</h6>
                         <p class="card-text">Belajar CSS</p>
                         <a href="#" class="btn btn-sm btn-primary mt-2">Pelajari</a>
                     </div>
@@ -48,9 +87,9 @@
 
             <div class="swiper-slide">
                 <div class="card" style="width: 20rem;">
-                    <img src="/images/html.jpg" class="card-img-top" alt="Langkah 3">
+                    <img src="/images/pemweb-js.png" class="card-img-top" alt="Langkah 3">
                     <div class="card-body">
-                        <h6 class="card-title">Langkah 3</h6>
+                        <h6 class="card-title">Materi 3</h6>
                         <p class="card-text">Belajar Java Script</p>
                         <a href="#" class="btn btn-sm btn-primary mt-2">Pelajari</a>
                     </div>
@@ -59,9 +98,9 @@
 
              <div class="swiper-slide">
                 <div class="card" style="width: 20rem;">
-                    <img src="/images/html.jpg" class="card-img-top" alt="Langkah 4">
+                    <img src="/images/pemweb-bootstrap.jpeg" class="card-img-top" alt="Langkah 4">
                     <div class="card-body">
-                        <h6 class="card-title">Langkah 4</h6>
+                        <h6 class="card-title">Materi 4</h6>
                         <p class="card-text">Belajar Framework Bootstrap</p>
                         <a href="#" class="btn btn-sm btn-primary mt-2">Pelajari</a>
                     </div>
@@ -80,10 +119,10 @@
 
             <div class="swiper-slide">
                 <div class="card" style="width: 20rem;">
-                    <img src="/images/html.jpg" class="card-img-top" alt="Langkah 1">
+                    <img src="/images/pemweb-node.png" class="card-img-top" alt="Langkah 1">
                     <div class="card-body">
-                        <h6 class="card-title">Langkah 1</h6>
-                        <p class="card-text">Belajar HTML</p>
+                        <h6 class="card-title">Materi 1</h6>
+                        <p class="card-text">Belajar JavaScript (Node.js)</p>
                         <a href="#" class="btn btn-sm btn-primary mt-2">Pelajari</a>
                     </div>
                 </div>
@@ -91,10 +130,10 @@
 
              <div class="swiper-slide">
                 <div class="card" style="width: 20rem;">
-                    <img src="/images/html.jpg" class="card-img-top" alt="Langkah 2">
+                    <img src="/images/pemweb-python.jpeg" class="card-img-top" alt="Langkah 2">
                     <div class="card-body">
-                        <h6 class="card-title">Langkah 2</h6>
-                        <p class="card-text">Belajar CSS</p>
+                        <h6 class="card-title">Materi 2</h6>
+                        <p class="card-text">Belajar Python</p>
                         <a href="#" class="btn btn-sm btn-primary mt-2">Pelajari</a>
                     </div>
                 </div>
@@ -102,10 +141,10 @@
 
             <div class="swiper-slide">
                 <div class="card" style="width: 20rem;">
-                    <img src="/images/html.jpg" class="card-img-top" alt="Langkah 3">
+                    <img src="/images/pemweb-php.jpeg" class="card-img-top" alt="Langkah 3">
                     <div class="card-body">
-                        <h6 class="card-title">Langkah 3</h6>
-                        <p class="card-text">Belajar Java Script</p>
+                        <h6 class="card-title">Materi 3</h6>
+                        <p class="card-text">Belajar PHP</p>
                         <a href="#" class="btn btn-sm btn-primary mt-2">Pelajari</a>
                     </div>
                 </div>
@@ -113,22 +152,39 @@
 
              <div class="swiper-slide">
                 <div class="card" style="width: 20rem;">
-                    <img src="/images/html.jpg" class="card-img-top" alt="Langkah 4">
+                    <img src="/images/pemweb-java.jpeg" class="card-img-top" alt="Langkah 4">
                     <div class="card-body">
-                        <h6 class="card-title">Langkah 4</h6>
-                        <p class="card-text">Belajar Framework Bootstrap</p>
+                        <h6 class="card-title">Materi 4</h6>
+                        <p class="card-text">Belajar Java</p>
                         <a href="#" class="btn btn-sm btn-primary mt-2">Pelajari</a>
                     </div>
                 </div>
             </div>
+
+            <div class="swiper-slide">
+                <div class="card" style="width: 20rem;">
+                    <img src="/images/pemweb-c.jpeg" class="card-img-top" alt="Langkah 4">
+                    <div class="card-body">
+                        <h6 class="card-title">Materi 5</h6>
+                        <p class="card-text">Belajar C#</p>
+                        <a href="#" class="btn btn-sm btn-primary mt-2">Pelajari</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <div class="d-flex justify-content-center gap-3 mt-3">
   <button class="btn btn-primary swiper-prev2">←</button>
   <button class="btn btn-primary swiper-next1">→</button>
 </div>
     </div>
-
 </div>
+<br>
+<!-- Footer -->
+<footer class="text-white text-center py-4" style="background-color: #004080;">
+    <p class="mb-0">© {{ date('Y') }} SISCourse — Sistem Informasi Pembelajaran STT Nurul Fikri</p>
+</footer>
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
     var swiper = new Swiper(".mySwiper", {
@@ -158,6 +214,8 @@
   }
 });
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
