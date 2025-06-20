@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SISCourse - Beranda</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -23,37 +22,42 @@
   </style>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #004080;">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">SISCourse</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">SISCourse</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarMain">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/mycourse">My Course</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/keluhan">Layanan</a>
+                </li>
+            </ul>
 
-    <div class="collapse navbar-collapse justify-content-between" id="navbarMain">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item"><a class="nav-link active" href="/">Beranda</a></li>
-        <li class="nav-item"><a class="nav-link" href="/mycourse">My Course</a></li>
-      </ul>
-      <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-            Akun
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item" href="/profile/reset">Edit Foto Profil</a></li>
-            <li><a class="dropdown-item" href="/settings">Setting</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li>
-              <form action="{{ route('logout') }}" method="POST">@csrf
-                <button class="dropdown-item text-danger" type="submit">Logout</button>
-              </form>
-            </li>
-          </ul>
-        </li>
-      </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="akunDropdown" role="button" data-bs-toggle="dropdown">
+                        Akun
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="/profile/reset">Edit Foto Profil</a></li>
+                        <li><a class="dropdown-item" href="/settings">Setting</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                             <a href="{{ route('logout') }}" class="text-red-600 hover:underline">Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
   </div>
 </nav>
@@ -247,26 +251,45 @@
             </div>
             </div>
         </div>
-        </div>
-        <!-- Modal Dosen 4 -->
-        <div class="modal fade" id="modalDosen4" tabindex="-1" aria-labelledby="modalDosen4Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalDosen4Label">Kelas oleh Atih Sari</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <p><strong>Mata Kuliah:</strong> Basis Data & IoT</p>
-                <p><strong>Waktu:</strong> Jumat, 08:00 - 11:30 WIB</p>
-                <p><strong>Ruangan:</strong> Zoom C</p>
-            </div>
-            <div class="modal-footer">
-                <a href="/kelas/fauzan" class="btn btn-primary">Join Kelas</a>
-            </div>
-            </div>
-        </div>
-        </div>
+<!-- Modal Dosen 4 -->
+<div class="modal fade" id="modalDosen4" tabindex="-1" aria-labelledby="modalDosen4Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalDosen4Label">Kelas oleh Atih Sari</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Mata Kuliah:</strong> Basis Data & IoT</p>
+        <p><strong>Waktu:</strong> Jumat, 08:00 - 11:30 WIB</p>
+        <p><strong>Ruangan:</strong> Zoom C</p>
+      </div>
+      <div class="modal-footer">
+        <a href="/kelas/fauzan" class="btn btn-primary">Join Kelas</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Dosen 2 -->
+<div class="modal fade" id="modalDosen2" tabindex="-1" aria-labelledby="modalDosen2Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalDosen2Label">Kelas oleh Andini</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Mata Kuliah:</strong> UI/UX & Data Science</p>
+        <p><strong>Waktu:</strong> Rabu, 10:00 - 11:40 WIB</p>
+        <p><strong>Ruangan:</strong> Zoom A</p>
+      </div>
+      <div class="modal-footer">
+        <a href="/kelas/andini" class="btn btn-primary">Join Kelas</a>
+      </div>
+    </div>
+  </div>
+</div>
         <!-- Modal Dosen 5 -->
         <div class="modal fade" id="modalDosen5" tabindex="-1" aria-labelledby="modalDosen5Label" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
