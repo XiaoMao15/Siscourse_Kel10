@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SISCourse - Beranda</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 
   <style>
     body {
@@ -23,43 +26,49 @@
   </style>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #004080;">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+  <i class="fas fa-graduation-cap fa-lg"></i> SISCourse</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #004080;">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="#">SISCourse</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarMain">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link active" href="/">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="/mycourse">My Course</a></li>
+        <li class="nav-item"><a class="nav-link" href="/keluhan">Layanan</a></li>
+      </ul>
 
-        <div class="collapse navbar-collapse justify-content-between" id="navbarMain">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="/">Beranda</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/mycourse">My Course</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/keluhan">Layanan</a>
-                </li>
-            </ul>
-
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="akunDropdown" role="button" data-bs-toggle="dropdown">
-                        Akun
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="/profile/reset">Edit Foto Profil</a></li>
-                        <li><a class="dropdown-item" href="/settings">Setting</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li>
-                             <a href="{{ route('logout') }}" class="text-red-600 hover:underline">Logout</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+     <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="akunDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Akun
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end shadow rounded-3 animate__animated animate__fadeIn" aria-labelledby="akunDropdown">
+            <li>
+              <a class="dropdown-item" href="/profile/reset">
+                <i class="bi bi-person-circle me-2"></i>Edit Foto Profil
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/settings">
+                <i class="bi bi-gear me-2"></i>Setting
+              </a>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+            <li>
+              <form action="{{ route('logout') }}" method="POST" class="px-3">
+                @csrf
+                <button class="btn btn-outline-danger w-100" type="submit">
+                  <i class="bi bi-box-arrow-right me-1"></i> Logout
+                </button>
+              </form>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
@@ -196,41 +205,44 @@
         <span class="visually-hidden">Berikutnya</span>
       </button>
       <!-- Modal Dosen 1 -->
-        <div class="modal fade" id="modalDosen1" tabindex="-1" aria-labelledby="modalDosen1Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalDosen1Label">Kelas oleh Dr. Rahmat</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <p><strong>Mata Kuliah:</strong> Keamanan Jaringan</p>
-                <p><strong>Waktu:</strong> Senin & Rabu, 09:00 - 10:40 WIB</p>
-                <p><strong>Ruangan:</strong> Online via Zoom</p>
-            </div>
-            <div class="modal-footer">
-                <a href="/kelas/rahmat" class="btn btn-primary">Join Kelas</a>
-            </div>
-        </div>
+<div class="modal fade" id="modalDosen1" tabindex="-1" aria-labelledby="modalDosen1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalDosen1Label">Kelas oleh Dr. Rahmat</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Mata Kuliah:</strong> Keamanan Jaringan</p>
+        <p><strong>Waktu:</strong> Senin & Rabu, 09:00 - 10:40 WIB</p>
+        <p><strong>Ruangan:</strong> Online via Zoom</p>
+      </div>
+      <div class="modal-footer">
+        <a href="/kelas/rahmat" class="btn btn-primary">Join Kelas</a>
+      </div>
+    </div>
+  </div>
+</div> <!-- <== Tambahkan penutup ini -->
+
     <!-- Modal Dosen 2 -->
-        <div class="modal fade" id="modalDosen2" tabindex="-1" aria-labelledby="modalDosen2Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered1">
-            <div class="modal-content1">
-            <div class="modal-header1">
-                <h5 class="modal-title1" id="modalDosen2Label">Kelas oleh Andini</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body1">
-                <p><strong>Mata Kuliah:</strong> UI/UX & Data Science</p>
-                <p><strong>Waktu:</strong> Rabu, 10:00 - 11:40 WIB</p>
-                <p><strong>Ruangan:</strong> Zoom A</p>
-            </div>
-            <div class="modal-footer1">
-                <a href="/kelas/andini" class="btn btn-primary">Join Kelas</a>
-            </div>
-            </div>
-        </div>
-        </div>
+<div class="modal fade" id="modalDosen2" tabindex="-1" aria-labelledby="modalDosen2Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalDosen2Label">Kelas oleh Andini</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Mata Kuliah:</strong> UI/UX & Data Science</p>
+        <p><strong>Waktu:</strong> Rabu, 10:00 - 11:40 WIB</p>
+        <p><strong>Ruangan:</strong> Zoom A</p>
+      </div>
+      <div class="modal-footer">
+        <a href="/kelas/andini" class="btn btn-primary">Join Kelas</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Modal Dosen 3 -->
         <div class="modal fade" id="modalDosen3" tabindex="-1" aria-labelledby="modalDosen3Label" aria-hidden="true">
@@ -250,19 +262,57 @@
             </div>
             </div>
         </div>
-        </div>
+<!-- Modal Dosen 4 -->
+<div class="modal fade" id="modalDosen4" tabindex="-1" aria-labelledby="modalDosen4Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalDosen4Label">Kelas oleh Atih Sari</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Mata Kuliah:</strong> Basis Data & IoT</p>
+        <p><strong>Waktu:</strong> Jumat, 08:00 - 11:30 WIB</p>
+        <p><strong>Ruangan:</strong> Zoom C</p>
+      </div>
+      <div class="modal-footer">
+        <a href="/kelas/fauzan" class="btn btn-primary">Join Kelas</a>
+      </div>
+    </div>
+  </div>
+</div>
 
-        <div class="modal fade" id="modalDosen3" tabindex="-1" aria-labelledby="modalDosen3Label" aria-hidden="true">
+<!-- Modal Dosen 2 -->
+<div class="modal fade" id="modalDosen2" tabindex="-1" aria-labelledby="modalDosen2Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalDosen2Label">Kelas oleh Andini</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Mata Kuliah:</strong> UI/UX & Data Science</p>
+        <p><strong>Waktu:</strong> Rabu, 10:00 - 11:40 WIB</p>
+        <p><strong>Ruangan:</strong> Zoom A</p>
+      </div>
+      <div class="modal-footer">
+        <a href="/kelas/andini" class="btn btn-primary">Join Kelas</a>
+      </div>
+    </div>
+  </div>
+</div>
+        <!-- Modal Dosen 5 -->
+        <div class="modal fade" id="modalDosen5" tabindex="-1" aria-labelledby="modalDosen5Label" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalDosen3Label">Kelas oleh Ahmad Fauzan</h5>
+                <h5 class="modal-title" id="modalDosen5Label">Kelas oleh Farhan Hidayat</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-                <p><strong>Mata Kuliah:</strong> Jaringan Komputer</p>
-                <p><strong>Waktu:</strong> Selasa, 08:00 - 09:40 WIB</p>
-                <p><strong>Ruangan:</strong> Zoom Room 2</p>
+                <p><strong>Mata Kuliah:</strong> Machine Learning</p>
+                <p><strong>Waktu:</strong> Rabu, 14:30 - 16:50</p>
+                <p><strong>Ruangan:</strong> Zoom Z</p>
             </div>
             <div class="modal-footer">
                 <a href="/kelas/fauzan" class="btn btn-primary">Join Kelas</a>
@@ -270,59 +320,137 @@
             </div>
         </div>
         </div>
-
-    </div>
-    </div>
-
+        <!-- Modal Dosen 6 -->
+        <div class="modal fade" id="modalDosen6" tabindex="-1" aria-labelledby="modalDosen6Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalDosen6Label">Nina Nurlela, S.T., M.T.</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Mata Kuliah:</strong> Cloud Computing</p>
+                <p><strong>Waktu:</strong> Kamis, 08:00 - 10:30</p>
+                <p><strong>Ruangan:</strong> Zoom J</p>
+            </div>
+            <div class="modal-footer">
+                <a href="/kelas/fauzan" class="btn btn-primary">Join Kelas</a>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- Modal Dosen 7 -->
+        <div class="modal fade" id="modalDosen7" tabindex="-1" aria-labelledby="modalDosen7Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalDosen7Label">Muhammad Danis, M.Kom</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Mata Kuliah:</strong> Algoritma & Struktur Data</p>
+                <p><strong>Waktu:</strong> Senin, 08:00 - 16:00</p>
+                <p><strong>Ruangan:</strong> Zoom R</p>
+            </div>
+            <div class="modal-footer">
+                <a href="/kelas/fauzan" class="btn btn-primary">Join Kelas</a>
+            </div>
+            </div>
+        </div>
+        </div>
+         <!-- Modal Dosen 8 -->
+        <div class="modal fade" id="modalDosen8" tabindex="-1" aria-labelledby="modalDosen8Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalDosen8Label">Laily Yusnia, M.T.I</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Mata Kuliah:</strong> Etika & Profesionalisme TI</p>
+                <p><strong>Waktu:</strong> Selasa, 08:00 - 10:100</p>
+                <p><strong>Ruangan:</strong> Zoom L</p>
+            </div>
+            <div class="modal-footer">
+                <a href="/kelas/fauzan" class="btn btn-primary">Join Kelas</a>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- Modal Dosen 9 -->
+        <div class="modal fade" id="modalDosen9" tabindex="-1" aria-labelledby="modalDosen9Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalDosen9Label">Rizky Ramadhan, M.Kom</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Mata Kuliah:</strong> Teknologi Web & Mobile</p>
+                <p><strong>Waktu:</strong> Rabu, 19:00 - 21:00</p>
+                <p><strong>Ruangan:</strong> Zoom I</p>
+            </div>
+            <div class="modal-footer">
+                <a href="/kelas/fauzan" class="btn btn-primary">Join Kelas</a>
+            </div>
+            </div>
+        </div>
+        </div>
     </div>
   </div>
 </section>
 
 
 
-  <!-- Informasi Terbaru -->
+<!-- Informasi Terkini -->
 <section class="py-5" style="background-color: #f1f7ff;">
   <div class="container">
-    <h4 class="fw-bold text-center mb-4 text-primary">📰 Informasi terkini</h4>
+    <h4 class="fw-bold text-center mb-4 text-primary">📰 Informasi Terkini</h4>
 
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
+    <div class="text-center">
+      <button class="btn btn-outline-primary fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#beritaCollapse" aria-expanded="false" aria-controls="beritaCollapse">
+        Lihat Pengumuman 📢
+      </button>
+    </div>
 
-        <!-- Card 1 -->
-        <div class="card shadow-sm border-start border-4 border-warning mb-4">
-          <div class="card-body">
-            <h5 class="card-title text-warning fw-semibold">📢 Hari ini libur!!</h5>
-            <p class="card-text mb-1">Dalam rangka peringatan Hari Raya Idul Adha, semua kegiatan perkuliahan ditiadakan.</p>
-            <p class="text-muted small mb-0">Diumumkan: 20 Juni 2025</p>
+    <div class="collapse mt-4" id="beritaCollapse">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+
+          <!-- Card 1 -->
+          <div class="card shadow-sm border-start border-4 border-warning mb-4">
+            <div class="card-body">
+              <h5 class="card-title text-warning fw-semibold">📢 Hari ini libur!!</h5>
+              <p class="card-text mb-1">Dalam rangka peringatan Hari Raya Idul Adha, semua kegiatan perkuliahan ditiadakan.</p>
+              <p class="text-muted small mb-0">Diumumkan: 20 Juni 2025</p>
+            </div>
           </div>
-        </div>
 
-        <!-- Card 2 -->
-        <div class="card shadow-sm border-start border-4 border-info mb-4">
-          <div class="card-body">
-            <h5 class="card-title text-info fw-semibold">🎓 Webinar ‘Strategi Sukses Magang’</h5>
-            <p class="card-text mb-1">Sabtu, 22 Juni 2025 pukul 09.00 WIB via Zoom. Terbuka untuk semua jurusan!</p>
-            <p class="text-muted small mb-0">Daftar sebelum: 21 Juni 2025</p>
+          <!-- Card 2 -->
+          <div class="card shadow-sm border-start border-4 border-info mb-4">
+            <div class="card-body">
+              <h5 class="card-title text-info fw-semibold">🎓 Webinar ‘Strategi Sukses Magang’</h5>
+              <p class="card-text mb-1">Sabtu, 22 Juni 2025 pukul 09.00 WIB via Zoom. Terbuka untuk semua jurusan!</p>
+              <p class="text-muted small mb-0">Daftar sebelum: 21 Juni 2025</p>
+            </div>
           </div>
-        </div>
 
-        <!-- Card 3 -->
-        <div class="card shadow-sm border-start border-4 border-success">
-          <div class="card-body">
-            <h5 class="card-title text-success fw-semibold">🆕 Kursus Baru: Laravel untuk Pemula</h5>
-            <p class="card-text mb-1">Materi lengkap kini tersedia di My Course. Yuk mulai belajar dan dapatkan sertifikatnya!</p>
-            <p class="text-muted small mb-0">Tersedia mulai: 20 Juni 2025</p>
+          <!-- Card 3 -->
+          <div class="card shadow-sm border-start border-4 border-success">
+            <div class="card-body">
+              <h5 class="card-title text-success fw-semibold">🆕 Kursus Baru: Laravel untuk Pemula</h5>
+              <p class="card-text mb-1">Materi lengkap kini tersedia di My Course. Yuk mulai belajar dan dapatkan sertifikatnya!</p>
+              <p class="text-muted small mb-0">Tersedia mulai: 20 Juni 2025</p>
+            </div>
           </div>
-        </div>
 
+        </div>
       </div>
     </div>
 
-    <div class="text-center mt-4">
-      <a href="/news" class="btn btn-primary px-4">Lihat Semua Berita</a>
-    </div>
   </div>
 </section>
+
 
 
 
