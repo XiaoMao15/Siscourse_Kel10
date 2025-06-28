@@ -22,34 +22,37 @@ class AuthController extends Controller
     }
 
     public function login(Request $request)
-    {
-        $validator = Validator::make($request->all(), [
-            'email' => 'required|email',
-            'password' => 'required',
-        ]);
+{
+    $validator = Validator::make($request->all(), [
+        'email' => 'required|email',
+        'password' => 'required',
+    ]);
 
-        if ($validator->fails()) {
-            // Throw exception validasi agar otomatis redirect dengan error
-            throw ValidationException::withMessages($validator->errors()->toArray());
-        }
-
-        $credentials = $request->only('email', 'password');
-        $remember = $request->has('remember');
-
-        if (Auth::attempt($credentials, $remember)) {
-            $request->session()->regenerate();
-
-            Session::put('last_login', now());
-
-            return Redirect::intended('/beranda')->with('success', 'Selamat datang, ' . Auth::user()->name);
-        }
-
-        // Kalau gagal login, kembalikan error manual
-        return Redirect::back()->withErrors([
-            'email' => 'Email atau password salah.',
-        ])->withInput($request->only('email'));
+    if ($validator->fails()) {
+        throw ValidationException::withMessages($validator->errors()->toArray());
     }
 
+    $credentials = $request->only('email', 'password');
+    $remember = $request->has('remember');
+
+    if (Auth::attempt($credentials, $remember)) {
+        $request->session()->regenerate();
+
+        $user = Auth::user();
+        Session::put('last_login', now());
+
+        switch ($user->role) {
+            case 'dosen':
+                return redirect('pages/dosen/dashboarddosen')->with('success', 'Selamat datang Dosen');
+            case 'mahasiswa':
+                return redirect('pages/mahasiswa/dashboardsiswa')->with('success', 'Selamat datang Mahasiswa');
+            default:
+                Auth::logout();
+                return redirect('/login')->withErrors(['email' => 'Role tidak dikenali.']);
+        }
+    }
+    return back()->withErrors(['email' => 'Email atau password salah.']);
+}
    public function showRegisterForm()
 {
     if (Auth::check()) {
