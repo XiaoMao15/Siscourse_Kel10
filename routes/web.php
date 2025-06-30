@@ -28,25 +28,34 @@ Route::get('/about', function () {
     return view('pages.about');
 })->middleware('auth');
 Route::get('/mycourse', function () {
-    return view('pages.kelas');
+    return view('pages.mahasiswa.kelas');
     })->middleware('auth');
 Route::get('/contact', function () {
     return view('pages.contact');
 })->middleware('auth');
 Route::get('/matakuliah', function () {
-    return view('pages.matakuliah');
+    return view('pages.mahasiswa.matakuliah');
 })->middleware('auth');
 Route::get('/matakuliah/software', function () {
-    return view('pages.matakuliah.software');
+    return view('pages.mahasiswa.matakuliah.software');
 })->middleware('auth');
 Route::get('/matakuliah/Ai', function () {
     return view('pages.matakuliah.Ai');
 })->middleware('auth');
 Route::get('/matakuliah/software-html', function () {
-    return view('pages.matakuliah.software-html');
+    return view('pages.mahasiswa.matakuliah.software-html');
 })->middleware('auth');
 Route::get('/matakuliah/keamanan', function () {
     return view('pages.matakuliah.keamanan');
+})->middleware('auth');
+Route::get('/matakuliah/network', function () {
+    return view('pages.mahasiswa.matakuliah.network');
+})->middleware('auth');
+Route::get('/matakuliah/data', function () {
+    return view('pages.mahasiswa.matakuliah.data');
+})->middleware('auth');
+Route::get('/matakuliah/cyber', function () {
+    return view('pages.mahasiswa.matakuliah.cyber');
 })->middleware('auth');
 
 Route::middleware(['auth', 'role:admin'])->group(function () {

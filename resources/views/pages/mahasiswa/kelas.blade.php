@@ -133,7 +133,7 @@
                     <p class="card-text text-muted">Semester 3</p>
                 </div>
                 <div class="card-footer bg-white border-0">
-                    <a href="#" class="btn btn-primary w-100">Lihat Detail</a>
+                    <a href="matakuliah/network" class="btn btn-primary w-100">Lihat Detail</a>
                 </div>
             </div>
         </div>
@@ -149,7 +149,7 @@
                     <p class="card-text text-muted">Semester 3</p>
                 </div>
                 <div class="card-footer bg-white border-0">
-                    <a href="#" class="btn btn-primary w-100">Lihat Detail</a>
+                    <a href="matakuliah/data" class="btn btn-primary w-100">Lihat Detail</a>
                 </div>
             </div>
         </div>
@@ -165,7 +165,7 @@
                     <p class="card-text text-muted">Semester 3</p>
                 </div>
                 <div class="card-footer bg-white border-0">
-                    <a href="#" class="btn btn-primary w-100">Lihat Detail</a>
+                    <a href="matakuliah/cyber" class="btn btn-primary w-100">Lihat Detail</a>
                 </div>
             </div>
         </div>

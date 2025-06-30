@@ -58,7 +58,7 @@ class AuthController extends Controller
     if (Auth::check()) {
         return redirect('/beranda'); // atau '/beranda'
     }
-    return view('register');
+    return view('register' );
 }
 
     public function register(Request $request)
