@@ -28,22 +28,25 @@ Route::get('/about', function () {
     return view('pages.about');
 })->middleware('auth');
 Route::get('/mycourse', function () {
-    return view('pages.kelas');
+    return view('pages.mahasiswa.kelas');
     })->middleware('auth');
 Route::get('/contact', function () {
-    return view('pages.contact');
+    return view('pages.mahasiswa.contact');
 })->middleware('auth');
 Route::get('/matakuliah', function () {
     return view('pages.matakuliah');
 })->middleware('auth');
 Route::get('/matakuliah/software', function () {
-    return view('pages.matakuliah.software');
+    return view('pages.mahasiswa.matakuliah.software');
 })->middleware('auth');
 Route::get('/matakuliah/Ai', function () {
-    return view('pages.matakuliah.Ai');
+    return view('pages.mahasiswa.matakuliah.Ai');
+})->middleware('auth');
+Route::get('/matakuliah/UIUX', function () {
+    return view('pages.mahasiswa.matakuliah.UIUX');
 })->middleware('auth');
 Route::get('/matakuliah/software-html', function () {
-    return view('pages.matakuliah.software-html');
+    return view('pages.mahasiswa.matakuliah.software-html');
 })->middleware('auth');
 Route::get('/matakuliah/keamanan', function () {
     return view('pages.matakuliah.keamanan');
