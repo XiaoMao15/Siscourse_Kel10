@@ -11,18 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tugas', function (Blueprint $table) {
+       Schema::create('post_kategoris', function (Blueprint $table) {
     $table->id();
-    $table->string('judul');
-    $table->text('deskripsi');
-    $table->string('file')->nullable();
-    $table->string('kategori');
-    $table->unsignedBigInteger('dosen_id');
+    $table->unsignedBigInteger("kategori_id");
+    $table->unsignedBigInteger("post_id");
+    $table->foreign("kategori_id")->references("id")->on("kategoris")->onDelete('cascade');
+    $table->foreign("post_id")->references("id")->on("posts")->onDelete('cascade');
     $table->timestamps();
-
-    $table->foreign('dosen_id')->references('id')->on('users')->onDelete('cascade');
 });
-
 
     }
 
@@ -31,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tugas');
+        Schema::dropIfExists('post_kategoris');
     }
 };

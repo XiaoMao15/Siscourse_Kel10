@@ -43,7 +43,7 @@ class AuthController extends Controller
 
         switch ($user->role) {
             case 'dosen':
-                return redirect('pages/dosen/dashboarddosen')->with('success', 'Selamat datang Dosen');
+                return redirect()->route('tugas.index')->with('success', 'Selamat datang Dosen');
             case 'mahasiswa':
                 return redirect('pages/mahasiswa/dashboardsiswa')->with('success', 'Selamat datang Mahasiswa');
             default:

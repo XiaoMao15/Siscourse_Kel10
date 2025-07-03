@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Tugas extends Model
 {
-    protected $fillable = ['judul', 'deskripsi', 'file', 'deadline', 'dosen_id'];
+    protected $fillable = ['judul', 'deskripsi', 'file', 'kategori', 'dosen_id'];
 
     public function pengumpulan()
     {

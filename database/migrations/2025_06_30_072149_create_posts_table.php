@@ -11,19 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tugas', function (Blueprint $table) {
+        Schema::create('posts', function (Blueprint $table) {
     $table->id();
-    $table->string('judul');
-    $table->text('deskripsi');
-    $table->string('file')->nullable();
-    $table->string('kategori');
-    $table->unsignedBigInteger('dosen_id');
+    $table->string("title");
+    $table->string("slug")->unique();
+    $table->text("thumbnail");
+    $table->text("content");
+    $table->unsignedBigInteger("user_id");
+    $table->foreign("user_id")->references("id")->on("users")->onDelete("cascade");
     $table->timestamps();
-
-    $table->foreign('dosen_id')->references('id')->on('users')->onDelete('cascade');
 });
-
-
     }
 
     /**
@@ -31,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tugas');
+        Schema::dropIfExists('posts');
     }
 };

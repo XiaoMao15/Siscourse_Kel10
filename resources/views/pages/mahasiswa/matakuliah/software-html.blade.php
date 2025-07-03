@@ -55,10 +55,21 @@
 </nav>
 <!-- Main Content -->
 <main class="container my-5">
-    <br>
+   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    @foreach($tugas as $t)
+        <div class="col">
+            <div class="card shadow-sm h-100">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">{{ $t->judul }}</h5>
+                    <p class="card-text text-muted mb-2">{{ $t->deskripsi }}</p>
+                    
 
-    <section class="mb-5">
-    <h4 class="text-center fw-semibold mb-4">HTML</h4>
+                  
+                </div>
+            </div>
+        </div>
+    @endforeach
+</div>
 
 </main>
 
