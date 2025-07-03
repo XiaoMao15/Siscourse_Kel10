@@ -42,6 +42,9 @@
       </ul>
 
      <ul class="navbar-nav">
+      <li class = 'nav-item'>
+        <a class="nav-link" href="/login">Login</a>
+      </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="akunDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Akun
@@ -98,7 +101,6 @@
     </button>
   </div>
 
-  <!-- Daftar Dosen -->
 <section class="mb-5 position-relative">
   <h4 class="text-center fw-semibold mb-4">Daftar Dosen Pengajar</h4>
 
@@ -218,7 +220,8 @@
         <p><strong>Ruangan:</strong> Online via Zoom</p>
       </div>
       <div class="modal-footer">
-        <a href="/kelas/rahmat" class="btn btn-primary">Join Kelas</a>
+        <a href="join_kelas.php?id=rahmat" class="btn btn-primary">Join Kelas</a>
+        <a href="/tugas" class="btn btn-outline-secondary">Lihat Tugas</a>
       </div>
     </div>
   </div>
@@ -238,7 +241,8 @@
         <p><strong>Ruangan:</strong> Zoom A</p>
       </div>
       <div class="modal-footer">
-        <a href="/kelas/andini" class="btn btn-primary">Join Kelas</a>
+        <a href="join_kelas.php?id=andini" class="btn btn-primary">Join Kelas</a>
+        <a href="tugas.php?dosen=andini" class="btn btn-outline-secondary">Lihat Tugas</a>
       </div>
     </div>
   </div>
@@ -258,49 +262,32 @@
                 <p><strong>Ruangan:</strong> Zoom B</p>
             </div>
             <div class="modal-footer">
-                <a href="/kelas/fauzan" class="btn btn-primary">Join Kelas</a>
+                <a href="join_kelas.php?id=fauzan" class="btn btn-primary">Join Kelas</a>
+                <a href="tugas.php?dosen=fauzan" class="btn btn-outline-secondary">Lihat Tugas</a>
             </div>
             </div>
         </div>
-<!-- Modal Dosen 4 -->
-<div class="modal fade" id="modalDosen4" tabindex="-1" aria-labelledby="modalDosen4Label" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalDosen4Label">Kelas oleh Atih Sari</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <p><strong>Mata Kuliah:</strong> Basis Data & IoT</p>
-        <p><strong>Waktu:</strong> Jumat, 08:00 - 11:30 WIB</p>
-        <p><strong>Ruangan:</strong> Zoom C</p>
-      </div>
-      <div class="modal-footer">
-        <a href="/kelas/fauzan" class="btn btn-primary">Join Kelas</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal Dosen 2 -->
-<div class="modal fade" id="modalDosen2" tabindex="-1" aria-labelledby="modalDosen2Label" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalDosen2Label">Kelas oleh Andini</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <p><strong>Mata Kuliah:</strong> UI/UX & Data Science</p>
-        <p><strong>Waktu:</strong> Rabu, 10:00 - 11:40 WIB</p>
-        <p><strong>Ruangan:</strong> Zoom A</p>
-      </div>
-      <div class="modal-footer">
-        <a href="/kelas/andini" class="btn btn-primary">Join Kelas</a>
-      </div>
-    </div>
-  </div>
-</div>
+        </div>
+        <!-- Modal Dosen 4 -->
+        <div class="modal fade" id="modalDosen4" tabindex="-1" aria-labelledby="modalDosen4Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalDosen4Label">Kelas oleh Atih Sari</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Mata Kuliah:</strong> Basis Data & IoT</p>
+                <p><strong>Waktu:</strong> Jumat, 08:00 - 11:30 WIB</p>
+                <p><strong>Ruangan:</strong> Zoom C</p>
+            </div>
+            <div class="modal-footer">
+                <a href="join_kelas.php?id=atih sari" class="btn btn-primary">Join Kelas</a>
+                <a href="tugas.php?dosen=atih sari" class="btn btn-outline-secondary">Lihat Tugas</a>
+            </div>
+            </div>
+        </div>
+        </div>
         <!-- Modal Dosen 5 -->
         <div class="modal fade" id="modalDosen5" tabindex="-1" aria-labelledby="modalDosen5Label" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -315,7 +302,8 @@
                 <p><strong>Ruangan:</strong> Zoom Z</p>
             </div>
             <div class="modal-footer">
-                <a href="/kelas/fauzan" class="btn btn-primary">Join Kelas</a>
+                <a href="join_kelas.php?id=farhan" class="btn btn-primary">Join Kelas</a>
+                <a href="tugas.php?dosen=farhan" class="btn btn-outline-secondary">Lihat Tugas</a>
             </div>
             </div>
         </div>
@@ -334,7 +322,8 @@
                 <p><strong>Ruangan:</strong> Zoom J</p>
             </div>
             <div class="modal-footer">
-                <a href="/kelas/fauzan" class="btn btn-primary">Join Kelas</a>
+                <a href="join_kelas.php?id=Nurlela" class="btn btn-primary">Join Kelas</a>
+                <a href="tugas.php?dosen=nurlela" class="btn btn-outline-secondary">Lihat Tugas</a>
             </div>
             </div>
         </div>
@@ -353,7 +342,8 @@
                 <p><strong>Ruangan:</strong> Zoom R</p>
             </div>
             <div class="modal-footer">
-                <a href="/kelas/fauzan" class="btn btn-primary">Join Kelas</a>
+                <a href="join_kelas.php?id=danis" class="btn btn-primary">Join Kelas</a>
+                <a href="tugas.php?dosen=danis" class="btn btn-outline-secondary">Lihat Tugas</a>
             </div>
             </div>
         </div>
@@ -372,7 +362,8 @@
                 <p><strong>Ruangan:</strong> Zoom L</p>
             </div>
             <div class="modal-footer">
-                <a href="/kelas/fauzan" class="btn btn-primary">Join Kelas</a>
+                <a href="join_kelas.php?id=yusnia" class="btn btn-primary">Join Kelas</a>
+                <a href="tugas.php?dosen=yusnia" class="btn btn-outline-secondary">Lihat Tugas</a>
             </div>
             </div>
         </div>
@@ -391,7 +382,8 @@
                 <p><strong>Ruangan:</strong> Zoom I</p>
             </div>
             <div class="modal-footer">
-                <a href="/kelas/fauzan" class="btn btn-primary">Join Kelas</a>
+                <a href="join_kelas.php?id=rizky" class="btn btn-primary">Join Kelas</a>
+                <a href="tugas.php?dosen=rizky" class="btn btn-outline-secondary">Lihat Tugas</a>
             </div>
             </div>
         </div>
@@ -399,8 +391,6 @@
     </div>
   </div>
 </section>
-
-
 
 <!-- Informasi Terkini -->
 <section class="py-5" style="background-color: #f1f7ff;">
