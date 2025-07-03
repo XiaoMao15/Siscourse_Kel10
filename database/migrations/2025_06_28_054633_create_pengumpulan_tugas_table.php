@@ -14,13 +14,13 @@ return new class extends Migration
         Schema::create('pengumpulan_tugas', function (Blueprint $table) {
     $table->id();
     $table->unsignedBigInteger('tugas_id');
-    $table->unsignedBigInteger('mahasiswa_id');
+    $table->unsignedBigInteger('id_mahasiswa');
     $table->string('file');
     $table->integer('nilai')->nullable();
     $table->timestamps();
 
     $table->foreign('tugas_id')->references('id')->on('tugas')->onDelete('cascade');
-    $table->foreign('mahasiswa_id')->references('id')->on('users')->onDelete('cascade');
+    $table->foreign('id_mahasiswa')->references('id')->on('users')->onDelete('cascade');
 });
 
     }
