@@ -34,7 +34,7 @@ Route::get('/contact', function () {
     return view('pages.mahasiswa.contact');
 })->middleware('auth');
 Route::get('/matakuliah', function () {
-    return view('pages.matakuliah');
+    return view('pages.mahasiswa.matakuliah');
 })->middleware('auth');
 Route::get('/matakuliah/software', function () {
     return view('pages.mahasiswa.matakuliah.software');
@@ -50,6 +50,15 @@ Route::get('/matakuliah/software-html', function () {
 })->middleware('auth');
 Route::get('/matakuliah/keamanan', function () {
     return view('pages.matakuliah.keamanan');
+})->middleware('auth');
+Route::get('/matakuliah/network', function () {
+    return view('pages.mahasiswa.matakuliah.network');
+})->middleware('auth');
+Route::get('/matakuliah/data', function () {
+    return view('pages.mahasiswa.matakuliah.data');
+})->middleware('auth');
+Route::get('/matakuliah/cyber', function () {
+    return view('pages.mahasiswa.matakuliah.cyber');
 })->middleware('auth');
 
 Route::middleware(['auth', 'role:admin'])->group(function () {

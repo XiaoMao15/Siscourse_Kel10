@@ -30,6 +30,7 @@
   <div class="container">
     <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
   <i class="fas fa-graduation-cap fa-lg"></i> SISCourse</a>
+  <p></p>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
       <span class="navbar-toggler-icon"></span>
     </button>
