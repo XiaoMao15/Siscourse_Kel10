@@ -3,11 +3,21 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Tugas extends Model
 {
-    protected $fillable = ['judul', 'deskripsi', 'file', 'deadline', 'dosen_id'];
+    use HasFactory;
+
+    protected $fillable = [
+        'judul', 
+        'deskripsi', 
+        'file', 
+        'deadline', 
+        'dosen_id'
+    ];
+
+    protected $table = 'tugas';
 
     public function pengumpulan()
     {
