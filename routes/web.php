@@ -83,7 +83,7 @@ Route::middleware(['auth', 'role:dosen'])->group(function () {
 
 // ======= MAHASISWA =======
 Route::middleware(['auth', 'role:mahasiswa'])->group(function () {
-    Route::view('/dashboardsiswa', 'pages.mahasiswa.dashboardsiswa');
+    Route::view('pages/mahasiswa/dashboardsiswa', 'pages.mahasiswa.dashboardsiswa');
     Route::get('/matakuliah/software-html', [TugasController::class, 'showMahasiswaHtml'])->name('tugas.html');
 
     Route::get('/tugas/{id}/submit', [TugasController::class, 'submitForm'])->name('tugas.submit');
@@ -91,3 +91,4 @@ Route::middleware(['auth', 'role:mahasiswa'])->group(function () {
     
     Route::get('/tugas/{id}/nilai', [TugasController::class, 'nilaiForm'])->name('tugas.nilai.form');
 });
+
